@@ -1,10 +1,10 @@
-import sys, os
+import sys
 sys.path.append('..')
-from lib import check_if_glib_works
+from lib import glibCheckerLib
 
-def reload(args):
+def reload():
     print("[DEBUG] Bot::reload")
-    check_if_glib_works()
+    glibCheckerLib()
     return f"This is a reply from bot::reload."
 
 def test_parameter(args):

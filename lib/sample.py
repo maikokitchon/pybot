@@ -1,2 +1,2 @@
-def check_if_glib_works():
+def glibCheckerLib():
     print('[INFO] Global lib is working.')
