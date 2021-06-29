@@ -11,6 +11,6 @@ WORKDIR=$(dirname "${SHDIR}")
 cd "${WORKDIR}"
 python3 -m venv .venv
 source .venv/bin/activate
-python3 "${WORKDIR}"/run.py
+python3 -u "${WORKDIR}"/run.py
 
 exec "$@"
