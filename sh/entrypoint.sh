@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/sh
 
 # Define work directory
 WORKDIR="$(dirname "${PWD}")"

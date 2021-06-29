@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 from posix import SCHED_FIFO
 from slack_bolt import App

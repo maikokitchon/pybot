@@ -19,7 +19,8 @@ RUN \
     apt-get update -qq && apt-get install cron -yqq && \
     touch /var/log/cron.log && \
     ls -la && \
-    chmod a+x sh/*.sh
+    chmod a+x sh/*.sh && \
+    ls -la sh/
 
 # Remove this later ---
 #ENTRYPOINT ["/DevOps_Scripts/Chatbot/Pybot/sh/entrypoint.sh"]
