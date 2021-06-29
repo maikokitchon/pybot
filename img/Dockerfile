@@ -16,7 +16,7 @@ RUN \
     python3 -m venv .venv && \
     source .venv/bin/activate && \
     pip install --no-input slack_bolt && \
-    apt-get update -qq && apt-get install cron -yqq && && apt-get install -yqq apt-utils && \
+    apt-get update -qq && apt-get install cron -yqq && apt-get install apt-utils -yqq && \
     touch /var/log/cron.log && \
     ls -la && \
     chmod a+x sh/*.sh && \
