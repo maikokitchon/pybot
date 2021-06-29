@@ -1,7 +1,7 @@
-#!/bin/sh
+# !/bin/sh
 
 # Define work directory
-WORKDIR="$(dirname "${PWD}")"
+WORKDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # Define scripts that will run in cron
 (crontab -l 2>/dev/null; echo "* * * * * /bin/bash -C ${WORKDIR}/sh/update_repository.sh > /var/log/cron.log 2>&1")|crontab
