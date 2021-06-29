@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Define work directory
+SHDIR="${0%/*}"
+WORKDIR=$(dirname "${SHDIR}")
+
+# Define date var
+NOW=$(date)
+
+# Go to workdir
+cd "${WORKDIR}"
+
 # Define branch to pull
 BRANCH='master'
 
@@ -10,6 +20,6 @@ then
     # No updates. Do nothing here.
     exit 0
 else
-    echo "[INFO] Updates detected. Pulling new changes..."
+    echo "${NOW} [INFO] Updates detected. Pulling new changes..."
     git pull origin "${BRANCH}"
 fi
