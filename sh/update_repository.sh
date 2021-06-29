@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # Define branch to pull
 BRANCH='master'
