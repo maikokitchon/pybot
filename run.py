@@ -19,7 +19,7 @@ def catch_event(body, say, logger):
     )
     say(f"<@{user_info['user']['name']}> OK. Please wait...")
     raw_message = body['event']['blocks'][0]['elements'][0]['elements'][1]['text']
-    loaderObj = Loader(raw_message)
+    loaderObj = Loader(raw_message, user_info)
     response = loaderObj.get_response()
     if len(response) != 0:
         say(f"<@{user_info['user']['name']}>, {response}")

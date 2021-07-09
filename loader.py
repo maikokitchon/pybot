@@ -1,18 +1,21 @@
 import sys, os
 import configparser
-from lib import messageParserLib, commandValidatorLib
+from lib import messageParserLib, commandValidatorLib, userValidatorLib
 
 class Loader:
 
-    def __init__(self, message):
+    def __init__(self, message, user_info):
         self.load_cnf()
         self.parse_message(message)
-        isUserValid = self.validate_user()
-        isCmdValid  = self.validate_cmd()
-        if isUserValid and isCmdValid:
-            self.execute_cmd()
+        isUserValid = self.validate_user(user_info)
+        if isUserValid is True:
+            isCmdValid  = self.validate_cmd()
+            if isCmdValid is True:
+                self.execute_cmd()
+            else:
+                self.response = self.config['RESPONSE']['ERROR']
         else:
-            self.response = self.config['RESPONSE']['ERROR']
+            self.response = self.config['RESPONSE']['UNAUTHORIZED']
 
     def get_response(self):
         return self.response
@@ -37,9 +40,8 @@ class Loader:
     def validate_cmd(self):
         return commandValidatorLib(self)
                 
-    def validate_user(self):
-        print("[INFO] Validate user is not yet ready.")
-        return True
+    def validate_user(self, user_info):
+        return userValidatorLib(user_info);
     
     def execute_cmd(self):
         try:

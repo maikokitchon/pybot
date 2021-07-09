@@ -12,12 +12,13 @@ def commandValidatorLib(args):
         print("[INFO] No action is taken.")
         return False
     else:
-        isModuleCnfEmpty = (len(args.config['MODULE'][args.module]) == 0)
-        if isModuleCnfEmpty:
-            print("[ERROR] This module is unidentified, please check configuration.")
+        if args.module in args.config['MODULE']:
+            print(f"[ERROR] The module [{args.module}] is defined in module.ini.")
+        else:
+            print("[ERROR] This module does not exist or not included in module.ini, please check configuration.")
             print("[INFO] No action is taken.")
             return False
-        elif args.config['MODULE'][args.module] != "enabled":
+        if args.config['MODULE'][args.module] != "enabled":
             print(f"[ERROR] The module [{args.module}] is not enabled.")
             print("[INFO] No action is taken.")
             return False
