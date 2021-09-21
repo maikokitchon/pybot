@@ -21,13 +21,13 @@ def catch_event(body, say, logger):
     raw_message = body['event']['blocks'][0]['elements'][0]['elements'][1]['text']
     loaderObj = Loader(raw_message, user_info)
     response = loaderObj.get_response()
-    if len(response) != 0:
-        say(f"<@{user_info['user']['name']}>, {response}")
-    elif isinstance(response, list):
+    if isinstance(response, list):
         if response['method'] == 'chat_postMessage':
             client.chat_postMessage(channel=body['event']['channel'], text=response['text'], username=user_info['user']['name'], attachments=response['attachments'])
         else:
             say(f"<@{user_info['user']['name']}>, something went wrong. Error: Invalid client method. Please contact bot admin.")
+    elif len(response) != 0:
+        say(f"<@{user_info['user']['name']}>, {response}")
     else:
         say(f"<@{user_info['user']['name']}>, I could not get any response from the back end. Please contact bot admin.")
 
