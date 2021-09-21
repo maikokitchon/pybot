@@ -21,7 +21,7 @@ def catch_event(body, say, logger):
     raw_message = body['event']['blocks'][0]['elements'][0]['elements'][1]['text']
     loaderObj = Loader(raw_message, user_info)
     response = loaderObj.get_response()
-    if isinstance(response, list):
+    if len(response['method']) != 0:
         if response['method'] == 'chat_postMessage':
             client.chat_postMessage(channel=body['event']['channel'], text=response['text'], username=user_info['user']['name'], attachments=response['attachments'])
         else:
@@ -29,7 +29,7 @@ def catch_event(body, say, logger):
     elif len(response) != 0:
         say(f"<@{user_info['user']['name']}>, {response}")
     else:
-        say(f"<@{user_info['user']['name']}>, I could not get any response from the back end. Please contact bot admin.")
+        say(f"<@{user_info['user']['name']}>, I could not get any response from the backend. Please contact bot admin.")
 
 if __name__ == "__main__":
     SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
