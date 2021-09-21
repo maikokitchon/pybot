@@ -14,7 +14,7 @@ attachments = [{
 				"placeholder": {
 					"type": "plain_text",
 					"text": "Select a date",
-					"emoji": "true"
+					"emoji": true
 				}
 			}
 		},
@@ -29,14 +29,14 @@ attachments = [{
 				"placeholder": {
 					"type": "plain_text",
 					"text": "Select an item",
-					"emoji": "true"
+					"emoji": true
 				},
 				"options": [
 					{
 						"text": {
 							"type": "plain_text",
 							"text": "10",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "10"
 					},
@@ -44,7 +44,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "11",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "11"
 					},
@@ -52,7 +52,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "12",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "12"
 					},
@@ -60,7 +60,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "13",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "13"
 					},
@@ -68,7 +68,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "14",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "14"
 					}
@@ -93,7 +93,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "10",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "10"
 					},
@@ -101,7 +101,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "11",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "11"
 					},
@@ -109,7 +109,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "12",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "12"
 					},
@@ -117,7 +117,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "13",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "13"
 					},
@@ -125,7 +125,7 @@ attachments = [{
 						"text": {
 							"type": "plain_text",
 							"text": "14",
-							"emoji": "false"
+							"emoji": false
 						},
 						"value": "14"
 					}
