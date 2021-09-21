@@ -13,8 +13,7 @@ attachments = [{
 				"initial_date": "1990-04-28",
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Select a date",
-					"emoji": True
+					"text": "Select a date"
 				}
 			}
 		},
@@ -28,47 +27,41 @@ attachments = [{
 				"type": "static_select",
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Select an item",
-					"emoji": True
+					"text": "Select an item"
 				},
 				"options": [
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "10",
-							"emoji": False
+							"text": "10"
 						},
 						"value": "10"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "11",
-							"emoji": False
+							"text": "11"
 						},
 						"value": "11"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "12",
-							"emoji": False
+							"text": "12"
 						},
 						"value": "12"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "13",
-							"emoji": False
+							"text": "13"
 						},
 						"value": "13"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "14",
-							"emoji": False
+							"text": "14"
 						},
 						"value": "14"
 					}
@@ -92,40 +85,35 @@ attachments = [{
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "10",
-							"emoji": False
+							"text": "10"
 						},
 						"value": "10"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "11",
-							"emoji": False
+							"text": "11"
 						},
 						"value": "11"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "12",
-							"emoji": False
+							"text": "12"
 						},
 						"value": "12"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "13",
-							"emoji": False
+							"text": "13"
 						},
 						"value": "13"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "14",
-							"emoji": False
+							"text": "14"
 						},
 						"value": "14"
 					}
