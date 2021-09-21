@@ -13,7 +13,8 @@ attachments = [{
 				"initial_date": "1990-04-28",
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Select a date"
+					"text": "Select a date",
+					"emoji": True
 				}
 			}
 		},
@@ -27,41 +28,47 @@ attachments = [{
 				"type": "static_select",
 				"placeholder": {
 					"type": "plain_text",
-					"text": "Select an item"
+					"text": "Select an item",
+					"emoji": True
 				},
 				"options": [
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "10"
+							"text": "10",
+							"emoji": False
 						},
 						"value": "10"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "11"
+							"text": "11",
+							"emoji": False
 						},
 						"value": "11"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "12"
+							"text": "12",
+							"emoji": False
 						},
 						"value": "12"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "13"
+							"text": "13",
+							"emoji": False
 						},
 						"value": "13"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "14"
+							"text": "14",
+							"emoji": False
 						},
 						"value": "14"
 					}
@@ -79,41 +86,46 @@ attachments = [{
 				"placeholder": {
 					"type": "plain_text",
 					"text": "Select an item",
-					"emoji": "true"
+					"emoji": True
 				},
 				"options": [
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "10"
+							"text": "10",
+							"emoji": False
 						},
 						"value": "10"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "11"
+							"text": "11",
+							"emoji": False
 						},
 						"value": "11"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "12"
+							"text": "12",
+							"emoji": False
 						},
 						"value": "12"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "13"
+							"text": "13",
+							"emoji": False
 						},
 						"value": "13"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "14"
+							"text": "14",
+							"emoji": False
 						},
 						"value": "14"
 					}
