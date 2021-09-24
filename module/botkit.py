@@ -3,7 +3,7 @@ from builtins import dict
 attachments = [{
 	"blocks": [
 		{
-			"type": "action",
+			"type": "actions",
 			"block_id": "actionblock1",
 			"elements": [
 				{
