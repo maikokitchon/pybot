@@ -3,134 +3,57 @@ from builtins import dict
 attachments = [{
 	"blocks": [
 		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "Pick a date for the deadline."
-			},
-			"accessory": {
-				"type": "datepicker",
-				"initial_date": "1990-04-28",
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select a date",
-					"emoji": True
+			"type": "action",
+			"block_id": "actionblock1",
+			"elements": [
+				{
+					"type": "datepicker",
+					"action_id": "datepickeraction1",
+					"initial_date": "2021-01-01",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select a date",
+						"emoji": True
+					}
+				},
+				{
+					"type": "timepicker",
+					"action_id": "timepickeraction1",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select an item",
+						"emoji": True
+					}
+				},
+				{
+					"type": "datepicker",
+					"action_id": "datepickeraction2",
+					"initial_date": "2021-01-01",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select a date",
+						"emoji": True
+					}
+				},
+				{
+					"type": "timepicker",
+					"action_id": "timepickeraction2",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select an item",
+						"emoji": True
+					}
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Submit"
+					},
+					"value": "click_me_1",
+					"action_id": "submitbtn1"
 				}
-			}
-		},
-		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "Pick the hour for the deadline"
-			},
-			"accessory": {
-				"type": "static_select",
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select an item",
-					"emoji": True
-				},
-				"options": [
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "10",
-							"emoji": False
-						},
-						"value": "10"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "11",
-							"emoji": False
-						},
-						"value": "11"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "12",
-							"emoji": False
-						},
-						"value": "12"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "13",
-							"emoji": False
-						},
-						"value": "13"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "14",
-							"emoji": False
-						},
-						"value": "14"
-					}
-				]
-			}
-		},
-		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "Pick the minute for the deadline"
-			},
-			"accessory": {
-				"type": "static_select",
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select an item",
-					"emoji": True
-				},
-				"options": [
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "10",
-							"emoji": False
-						},
-						"value": "10"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "11",
-							"emoji": False
-						},
-						"value": "11"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "12",
-							"emoji": False
-						},
-						"value": "12"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "13",
-							"emoji": False
-						},
-						"value": "13"
-					},
-					{
-						"text": {
-							"type": "plain_text",
-							"text": "14",
-							"emoji": False
-						},
-						"value": "14"
-					}
-				]
-			}
+			]
 		}
 	]
 }]
