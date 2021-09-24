@@ -37,10 +37,11 @@ def catch_event(body, say, logger):
     "block_id": "actionblock1",   
     "action_id": "submitbtn1"
 })
-def update_message(bot, body, client):
-    bot.replyInteractive('test message')
+def update_message(ack, body, client, respond):
+    client.replyInteractive('test message')
+    respond('test')
     #print(body)
-    #ack()
+    ack()
 
 if __name__ == "__main__":
     SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
