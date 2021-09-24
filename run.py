@@ -38,7 +38,7 @@ def catch_event(body, say, logger):
     "action_id": "submitbtn1"
 })
 def update_message(ack, body, client, respond):
-    client.replyInteractive('test message')
+    #client.replyInteractive('test message')
     respond('test')
     #print(body)
     ack()
