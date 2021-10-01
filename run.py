@@ -38,9 +38,19 @@ def catch_event(body, say, logger):
     "action_id": "submitbtn1"
 })
 def update_message(ack, body, client, respond):
-    #client.replyInteractive('test message')
-    respond('test')
-    print(body)
+    actionblock1 = body['state']['values']['actionblock1']
+    from_date = actionblock1['datepickeraction1']['selected_date']
+    from_time = actionblock1['timepickeraction1']['selected_time']
+    to_date   = actionblock1['datepickeraction2']['selected_date']
+    to_time   = actionblock1['timepickeraction2']['selected_time']
+    rcv_msg = "botkit process datetimepicker"
+    rcv_msg += f" :{from_date} :{from_time} :{to_date} :{to_time}"
+    user_info = client.users_info(
+        user=body['user']['id']
+    )
+    loaderObj = Loader(rcv_msg, user_info)
+    response = loaderObj.get_response()
+    respond(response)
     ack()
 
 if __name__ == "__main__":

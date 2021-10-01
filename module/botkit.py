@@ -83,3 +83,8 @@ def test_datetimepicker():
     data['attachments'] = attachments
     data['text'] = f"Botkit testing POC for custom datetime picker."
     return data
+
+def process_datetimepicker(args):
+	print(args)
+    response = "Data has been received."
+    return response
