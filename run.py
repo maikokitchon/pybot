@@ -40,7 +40,7 @@ def catch_event(body, say, logger):
 def update_message(ack, body, client, respond):
     #client.replyInteractive('test message')
     respond('test')
-    #print(body)
+    print(body)
     ack()
 
 if __name__ == "__main__":

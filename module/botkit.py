@@ -45,6 +45,25 @@ attachments = [{
 					}
 				},
 				{
+					"type": "static_select",
+					"action_id": "selectenvaction2",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select an environment",
+						"emoji": True
+					},
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "DEV7",
+								"emoji": False
+							},
+							"value": "DEV7"
+						}
+					]
+				},
+				{
 					"type": "button",
 					"text": {
 						"type": "plain_text",
