@@ -86,5 +86,4 @@ def test_datetimepicker():
 
 def process_datetimepicker(args):
 	print(args)
-    response = "Data has been received."
-    return response
+	return "Data has been received."
