@@ -53,5 +53,10 @@ def update_message(ack, body, client, respond):
     respond(response)
     ack()
 
+@app.action("selectenvaction1")
+def handle_some_action(ack, body, logger):
+    ack()
+    logger.info(body)
+
 if __name__ == "__main__":
     SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
