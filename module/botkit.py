@@ -10,7 +10,7 @@ attachments = [{
 				{
 					"type": "datepicker",
 					"action_id": "datepickeraction1",
-					"initial_date": f"{datetime.today().strftime('%m-%Y-%d')}",
+					"initial_date": f"{datetime.today().strftime('%m-%d-%Y')}",
 					"placeholder": {
 						"type": "plain_text",
 						"text": "Select a date"
@@ -27,7 +27,7 @@ attachments = [{
 				{
 					"type": "datepicker",
 					"action_id": "datepickeraction2",
-					"initial_date": f"{datetime.today().strftime('%m-%Y-%d')}",
+					"initial_date": f"{datetime.today().strftime('%m-%d-%Y')}",
 					"placeholder": {
 						"type": "plain_text",
 						"text": "Select a date"
