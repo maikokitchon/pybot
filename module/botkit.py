@@ -1,4 +1,5 @@
 from builtins import dict
+from datetime import datetime
 
 attachments = [{
 	"blocks": [
@@ -9,11 +10,10 @@ attachments = [{
 				{
 					"type": "datepicker",
 					"action_id": "datepickeraction1",
-					"initial_date": "2021-01-01",
+					"initial_date": f"{datetime.today().strftime('%m-%Y-%d')}",
 					"placeholder": {
 						"type": "plain_text",
-						"text": "Select a date",
-						"emoji": True
+						"text": "Select a date"
 					}
 				},
 				{
@@ -21,18 +21,16 @@ attachments = [{
 					"action_id": "timepickeraction1",
 					"placeholder": {
 						"type": "plain_text",
-						"text": "Select an item",
-						"emoji": True
+						"text": "Select an item"
 					}
 				},
 				{
 					"type": "datepicker",
 					"action_id": "datepickeraction2",
-					"initial_date": "2021-01-01",
+					"initial_date": f"{datetime.today().strftime('%m-%Y-%d')}",
 					"placeholder": {
 						"type": "plain_text",
-						"text": "Select a date",
-						"emoji": True
+						"text": "Select a date"
 					}
 				},
 				{
@@ -40,24 +38,38 @@ attachments = [{
 					"action_id": "timepickeraction2",
 					"placeholder": {
 						"type": "plain_text",
-						"text": "Select an item",
-						"emoji": True
+						"text": "Select an item"
 					}
 				},
 				{
 					"type": "static_select",
-					"action_id": "selectenvaction2",
+					"action_id": "selectappaction1",
 					"placeholder": {
 						"type": "plain_text",
-						"text": "Select an environment",
-						"emoji": True
+						"text": "Select an environment"
 					},
 					"options": [
 						{
 							"text": {
 								"type": "plain_text",
-								"text": "DEV7",
-								"emoji": False
+								"text": "gst"
+							},
+							"value": "GST"
+						}
+					]
+				},
+				{
+					"type": "static_select",
+					"action_id": "selectenvaction1",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select an environment"
+					},
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "dev7"
 							},
 							"value": "DEV7"
 						}
